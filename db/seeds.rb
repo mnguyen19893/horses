@@ -3,7 +3,7 @@ HORSES_PER_BREED = 4
 
 Horse.destroy_all
 Breed.destroy_all
-#AdminUser.destroy_all
+AdminUser.destroy_all
 
 NUMBER_OF_BREEDS.times do
   breed = Breed.create(name: Faker::Creature::Horse.unique.breed)
@@ -20,4 +20,4 @@ end
 
 puts "Created #{Breed.count} Breeds."
 puts "Created #{Horse.count} Horses."
-#AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
+AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
