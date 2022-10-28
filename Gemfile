@@ -53,6 +53,7 @@ gem 'activeadmin'
 gem 'devise'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
+gem 'image_processing'
 
 
 group :development, :test do
